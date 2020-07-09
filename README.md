@@ -1,13 +1,13 @@
 # Context Extraction
-The main aim of the project is to scrap reviews from website for American cuisine restaurants in NYC. Then from the scrapped reviews, it would extract the context and calculate the accuracy for each context. (Contexts considered are: Whom, When, Where, and Occasion) 
+The main aim of the project is to scrape reviews from website for American cuisine restaurants in NYC. Then from the scrapped reviews, it would extract the context and calculate the accuracy for each context. (Contexts considered are: Whom, When, Where, and Occasion) 
     - 'Whom' denotes, with whom the user went to the restaurant (example: friends, family, etc.) 
     - 'When' denotes, for which part of the day the user dined in (example: lunch, dinner, etc.) 
     - 'Where' denotes, whether the user is local or tourist.
     - 'Occasion' denotes, for which particular occasion the user visited (example: birthday, wedding anniversary, etc.)
 
-Step 1: In this step, the program scraps the list of 150 restaurants having their names along with unique usernames and URLs. It saves the list in a txt extension file.
+Step 1: In this step, the program scrapes the list of 150 restaurants having their names along with unique usernames and URLs. It saves the list in a txt extension file.
 
-Step 2: In the second step, it scraps raw HTML files for every review page (every review page consist of approximately 20 reviews) from all the restaurants in the list (generated in step 1). These HTML pages were stored under a folder created by the restaurants' unique username.
+Step 2: In the second step, it scrapes raw HTML files for every review page (every review page consist of approximately 20 reviews) from all the restaurants in the list (generated in step 1). These HTML pages were stored under a folder created by the restaurants' unique username.
 
 Step 3: After scrapping raw HTML files, in this step, the program scanned through every review HTML page of each restaurant and saved each review under the same restaurant folder as "restaurant-name-reviews.txt". Also, a copy of consolidated reviews was generated in the parent folder (one level up folder) as reviews.txt
 
