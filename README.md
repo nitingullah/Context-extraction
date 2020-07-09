@@ -19,10 +19,10 @@ Step 5: At this step, we have built a dictionary for each context based on the p
 Step 6: This is the last step to reach our final observations. These observations were divided into two sub-sections: I. Find context out of any passed review. II. Find the context accuracy.
 
 I. The program picks every word or phrase from the dictionary (flat file) and finds the similar word strings in every review. The program then stores the found similar strings in a set (to avoid duplicates) then check for an exact match on it. Each exact match then stored in python dictionary of a set. The saved dictionary has been returned after performing the same operations for each context. The output of this operations is as follows: 
-    - Whom: friends, family 
-    - When: lunch 
-    - Where: tourist 
-    - Occasion: birthday
+    * Whom: friends, family 
+    * When: lunch 
+    * Where: tourist 
+    * Occasion: birthday
 
 II. To check the accuracy, the program reads all the reviews extracted before and generates a test-dataset. This test-dataset pertains the same structure to the train-dataset. Then, it loads all the lines of both training-dataset and test-dataset in run-time memory in two different lists. After creating two lists, it traverses through both lists parallelly and matches binary values for each context. For each context, the program maintains a counter and on every match, it increments the counter by 1. After matching each context for every review, it calculates the accuracy by dividing it by a total number of reviews or by the size of any list. The result of the observation is as followed: 
     - Whom Accuracy: xx.xx% 
